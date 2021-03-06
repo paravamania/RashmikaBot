@@ -240,7 +240,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                              text=" ❤️ Source Code ",
-                             url="https://github.com/ALENTL/FM-RASHMIKABOT")
+                             url="https://github.com/ALENTL/RashmikaBot")
                     
                     ]]))
     else:
