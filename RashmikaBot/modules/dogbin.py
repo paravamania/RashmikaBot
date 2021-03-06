@@ -117,14 +117,14 @@ def get_paste_stats(bot: Bot, update: Update, args: List[str]):
 
 
 __help__ = """
- - /paste: Create a paste or a shortened url using [dogbin](https://del.dog)
- - /getpaste: Get the content of a paste or shortened url from [dogbin](https://del.dog)
- - /pastestats: Get stats of a paste or shortened url from [dogbin](https://del.dog)
+ - /dpaste: Create a paste or a shortened url using [dogbin](https://del.dog)
+ - /getdpaste: Get the content of a paste or shortened url from [dogbin](https://del.dog)
+ - /dpastestats: Get stats of a paste or shortened url from [dogbin](https://del.dog)
 """
 
 __mod_name__ = "Dogbin"
 
-PASTE_HANDLER = DisableAbleCommandHandler("paste", paste, pass_args=True)
+PASTE_HANDLER = DisableAbleCommandHandler("dpaste", paste, pass_args=True)
 GET_PASTE_HANDLER = DisableAbleCommandHandler("getdpaste", get_paste_content, pass_args=True)
 PASTE_STATS_HANDLER = DisableAbleCommandHandler("dpastestats", get_paste_stats, pass_args=True)
 
