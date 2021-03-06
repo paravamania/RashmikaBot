@@ -5,7 +5,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from SaitamaRobot import (
+from RashmikaBot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
