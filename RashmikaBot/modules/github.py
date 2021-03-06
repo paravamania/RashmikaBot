@@ -8,7 +8,7 @@ from requests import get
 
 
 @run_async
-def github(bot: Bot, update: Update):
+def github(bot: Bot, update: Update, context: CallbackContext):
     message = update.effective_message
     text = message.text[len('/git '):]
     usr = get(f'https://api.github.com/users/{text}').json()
@@ -37,7 +37,7 @@ def github(bot: Bot, update: Update):
 
 
 @run_async
-def repo(bot: Bot, update: Update, context: CallbackContext, args: [str]):
+def repo(bot: Bot, update: Update, args: [str]):
     message = update.effective_message
     text = message.text[len('/repo '):]
     usr = get(f'https://api.github.com/users/{text}/repos?per_page=40').json()
