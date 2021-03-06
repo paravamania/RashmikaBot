@@ -1,5 +1,5 @@
 from telegram import ParseMode, Update, Bot
-from telegram.ext import run_async
+from telegram.ext import run_async, CallbackContext
 
 from RashmikaBot.modules.disable import DisableAbleCommandHandler
 from RashmikaBot import dispatcher
