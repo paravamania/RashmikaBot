@@ -53,10 +53,10 @@ async def img_sampler(event):
      os.remove(files_grabbed)
      os.chdir('./')
     
-    __help__ = """➩ /google <text input> Gets google search result
+__help__ = """ 
  ➩ /img <object> Gets google image results
  ➩ /reverse : Reverse searches image or stickers on google.
  ➩ /gps <location> Get gps location
- """
+"""
 
 __mod_name__ = "GOOGLE"
