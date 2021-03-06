@@ -5,7 +5,7 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from  RashmikabOT import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from  RashmikaBot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
 from RashmikaBot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)

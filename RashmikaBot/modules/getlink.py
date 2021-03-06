@@ -1,6 +1,6 @@
 from typing import List
 
-from RashmikaBot import Update, Bot, Chat, Message, User
+from telegram import Update, Bot, Chat, Message, User
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
