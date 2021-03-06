@@ -9,11 +9,11 @@ from telegram.ext import run_async
 
 
 @run_async
-def truth(bot: Bot, update: Update, context: CallbackContext):
+def truth(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(truth_and_dare_string.TRUTH))
 
 @run_async
-def dare(bot: Bot, update: Update, context: CallbackContext):
+def dare(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(truth_and_dare_string.DARE))
 
 __help__ = """
