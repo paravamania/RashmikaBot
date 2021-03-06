@@ -37,7 +37,7 @@ def github(bot: Bot, update: Update, context: CallbackContext):
 
 
 @run_async
-def repo(bot: Bot, update: Update, args: [str]):
+def repo(bot: Bot, update: Update, args: List[str]):
     message = update.effective_message
     text = message.text[len('/repo '):]
     usr = get(f'https://api.github.com/users/{text}/repos?per_page=40').json()
@@ -54,11 +54,11 @@ __help__ = """
 
 __mod_name__ = "GITHUB"
 
-github_handle = DisableAbleCommandHandler("git", github)
+GITHUB_HANDLER = DisableAbleCommandHandler("git", github)
 REPO_HANDLER = DisableAbleCommandHandler("repo", repo, pass_args=True, admin_ok=True)
 
 
 
 
-dispatcher.add_handler(github_handle)
+dispatcher.add_handler(GITHUB_HANDLER)
 dispatcher.add_handler(REPO_HANDLER)
