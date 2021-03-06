@@ -57,7 +57,6 @@ async def img_sampler(event):
  ➩ /google <text input> Gets google search result
  ➩ /img <object> Gets google image results
  ➩ /reverse : Reverse searches image or stickers on google.
- ➩ /gps <location> Get gps location
-"""
+ ➩ /gps <location> Get gps location"""
 
 __mod_name__ = "GOOGLE"
