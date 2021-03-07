@@ -76,12 +76,12 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am the group management bot of FOCUS MOVIES .. You guys can't use me or add me to groups.........
+I am the group management bot of FILM KOTTAKA GROUP .. You guys can't use me or add me to groups.........
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I am exlusively made for FOCUS MOVIES Group and You cannot add me to your groups....You can use me either by / or ! command
+I am exlusively made for FILM KOTTAKA Group and You cannot add me to your groups....You can use me either by / or ! command
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -226,21 +226,21 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔔 Channel ",
-                             url="https://t.me/focusgrpchannel")
+                             url="https://t.me/Film_kotaka")
                      ],
                      [
                         InlineKeyboardButton(
                             text=" ✨ Help ",
-                            url="https://t.me/midukkirashmika2_bot?start=help"),
+                            url="https://t.me/Filmkottakabot?start=help"),
                          InlineKeyboardButton(
                             text=" ⚡️ Group ",
-                             url="https://t.me/focusmoviess")        
+                             url="https://t.me/Film_kottaka")        
                        
                      ],
                      [
                         InlineKeyboardButton(
                              text=" ❤️ Source Code ",
-                             url="https://github.com/ALENTL/RashmikaBot")
+                             url="https://github.com/paravamania/RashmikaBot")
                     
                     ]]))
     else:
